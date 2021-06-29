@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div id="wrapper">
+    <div id="theseboxes">
+        {% for x in range(0, num // 2): %}
+        <div id="boxes" class="black"></div>
+        <div id="boxes" class="red"></div>
+        <div id="boxes" class="black"></div>
+        <div id="boxes" class="red"></div>
+        <br>
+        <div id="boxes" class="red"></div>
+        <div id="boxes" class="black"></div>
+        <div id="boxes" class="red"></div>
+        <div id="boxes" class="black"></div>
+        <br>
+        {% endfor %}
+        </div>
+</div>
+</body>
+</html>

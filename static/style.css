@@ -1,0 +1,23 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#theseboxes {
+    display: block;
+}
+
+#boxes{
+    display: inline-block;
+    width:100px;
+    height:100px;
+    margin: -4px;
+}
+
+.red{
+    background-color: red;
+}
+
+.black{
+    background-color: black;
+}
